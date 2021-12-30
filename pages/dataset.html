@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../assets/css/select2.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/main.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/geo-resource-styles.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/medium-editor.css" /> 
+  <meta charset="utf-8" />
+  <meta name="generator" content="ckan 2.4.6" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Datang - Portal Data Kota Bandung</title>
+  <link rel="shortcut icon" href="../assets/images/bandung-logo.png" />
+</head>
+
+<body data-site-root="http://data.bandung.go.id/" data-locale-root="http://data.bandung.go.id/">
+  <div class="hide"><a href="#content">Skip to content</a></div>
+  <header class="account-masthead">
+    <div class="container">
+      <nav class="account not-authed">
+        <ul class="unstyled">
+          <li><a href="/user/login">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <header class="navbar navbar-static-top masthead">
+    <div class="container">
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <hgroup class="header-image pull-left">
+        <a class="logo" href="/"><img src="../assets/images/opendatabdg-new-001.png" alt="Portal Data Kota Bandung"
+            title="Portal Data Kota Bandung" /></a>
+      </hgroup>
+      <div class="nav-collapse collapse">
+        <nav class="section navigation">
+          <ul class="nav nav-pills">
+            <li><a href="dataset.html">Dataset</a></li>
+            <li><a href="organisasi.html">Organisasi</a></li>
+            <li><a href="group.html">Grup</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="bantuan.html">Bantuan</a></li>
+            <li><a href="#" target="_blank">Versi 2.0</a></li>
+          </ul>
+        </nav>
+        <!-- <form class="section site-search simple-input" action="/dataset" method="get">
+          <div class="field">
+            <label for="field-sitewide-search">Search Datasets</label>
+            <input id="field-sitewide-search" type="text" name="q" placeholder="Search" />
+            <button class="btn-search" type="submit"><i class="icon-search"></i></button>
+          </div>
+        </form> -->
+      </div>
+    </div>
+  </header>
+  <div role="main">
+    <div id="content" class="container">
+      <div class="flash-messages">
+      </div>
+      <div class="toolbar">
+        <ol class="breadcrumb">
+          <li class="home"><a href="/"><i class="icon-home"></i><span> Home</span></a></li>
+          <li class="active"><a href="/dataset">Datasets</a></li>
+        </ol>
+      </div>
+      <div class="row wrapper">
+        <div class="primary span9">
+          <section class="module">
+            <div class="module-content">
+              <form id="dataset-search-form" class="search-form" method="get" data-module="select-switch">
+                <div class="search-input control-group search-giant">
+                  <input type="text" class="search" name="q" value="" autocomplete="off"
+                    placeholder="Search datasets...">
+                  <button type="submit" value="search">
+                    <i class="icon-search"></i>
+                    <span>Submit</span>
+                  </button>
+                </div>
+                <div class="form-select control-group control-order-by">
+                  <label for="field-order-by">Order by</label>
+                  <select id="field-order-by" name="sort">
+                    <option value="score desc, metadata_modified desc" selected="selected">Relevance</option>
+                    <option value="title_string asc">Name Ascending</option>
+                    <option value="title_string desc">Name Descending</option>
+                    <option value="metadata_modified desc">Last Modified</option>
+                  </select>
+                  <button class="btn js-hide" type="submit">Go</button>
+                </div>
+                <h2>
+                  <!-- Snippet snippets/search_result_text.html start -->
+                  3,041 datasets found
+                  <!-- Snippet snippets/search_result_text.html end -->
+                </h2>
+                <p class="filter-list">
+                </p>
+                <a class="show-filters btn">Filter Results</a>
+              </form>
+              <!-- Snippet snippets/search_form.html end -->
+              <!-- Snippet snippets/package_list.html start -->
+              <ul class="dataset-list unstyled">
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="dataset-detail.html">Jumlah Rumah Memenuhi Syarat
+                        Sehat di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data jumlah rumah memenuhi syarat sehat di Kota Bandung.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-rumah-memenuhi-syarat-sehat-di-kota-bandung" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-pelayanan-kesehatan-gigi-dan-mulut-menurut-puskesmas-di-kota-bandung">Jumlah
+                        Pelayanan Kesehatan Gigi dan Mulut Menurut Puskesmas di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi jumlah pelayanan Kesehatan Gigi dan Mulut di puskesmas setiap kecamatan di
+                      Kota Bandung</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-pelayanan-kesehatan-gigi-dan-mulut-menurut-puskesmas-di-kota-bandung"
+                        class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a
+                        href="/dataset/jumlah-penduduk-dengan-akses-sumber-air-minum-berkualitas-serta-memenuhi-syarat">Jumlah
+                        Penduduk Dengan Akses Sumber Air Minum Berkualitas Serta Memenuhi Syarat</a>
+                    </h3>
+                    <div>Dataset ini berisi mengenai data jumlah penduduk dengan akses sumber air minum berkualitas dan
+                      memenuhi syarat menurut kecamatan di Kota Bandung</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-penduduk-dengan-akses-sumber-air-minum-berkualitas-serta-memenuhi-syarat"
+                        class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-tenaga-administrasi-kesehatan-di-fasilitas-kesehatan">Jumlah Tenaga
+                        Administrasi Kesehatan di Fasilitas Kesehatan</a>
+                    </h3>
+                    <div>Dataset ini berisi jumlah tenaga administrasi kesehatan (Pejabat Struktural, Staf Penunjang
+                      Administrasi, Staf Penunjang Teknologi, Staf Penunjang Perencanaan, Tenaga Pendidik,...</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-tenaga-administrasi-kesehatan-di-fasilitas-kesehatan" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-bidan-dan-perawat-di-fasilitas-kesehatan-kota-bandung">Jumlah Bidan dan
+                        Perawat di Fasilitas Kesehatan Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data jumlah bidan dan perawat di fasilitas kesehatan Kota Bandung.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-bidan-dan-perawat-di-fasilitas-kesehatan-kota-bandung" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a
+                        href="/dataset/jumlah-balita-usia-12-59-bulan-yang-mendapat-vitamin-a-menurut-puskesmas-di-kota-bandung">Jumlah
+                        Balita Usia 12-59 Bulan yang Mendapat Vitamin A Menurut Puskesmas di K...</a>
+                    </h3>
+                    <div>Dataset ini berisi data jumlah balita usia 12-59 bulan yang mendapat vitamin A menurut
+                      puskesmas di Kota Bandung.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-balita-usia-12-59-bulan-yang-mendapat-vitamin-a-menurut-puskesmas-di-kota-bandung"
+                        class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a
+                        href="/dataset/jumlah-bayi-usia-6-11-bulan-yang-mendapat-vitamin-a-menurut-puskesmas-di-kota-bandung">Jumlah
+                        Bayi Usia 6-11 Bulan yang Mendapat Vitamin A Menurut Puskesmas di Kota...</a>
+                    </h3>
+                    <div>Dataset ini berisi data jumlah bayi usia 6-11 bulan yang mendapat vitamin A Menurut Puskesmas
+                      di Kota Bandung</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-bayi-usia-6-11-bulan-yang-mendapat-vitamin-a-menurut-puskesmas-di-kota-bandung"
+                        class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-dokter-di-pelayanan-kesehatan-kota-bandung">Jumlah Dokter di Fasilitas
+                        Kesehatan Kota Bandung</a>
+                    </h3>
+                    <div>
+                      Konsep &amp; Definisi : Dataset ini berisi data Jumlah Dokter Spesialis, Dokter Umum, Dokter Gigi
+                      dan Dokter Gigi Spesialis menurut Sarana Pelayanan Kesehatan di Kota Bandung...</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-dokter-di-pelayanan-kesehatan-kota-bandung" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-tenaga-kesmas-dan-kesling-di-fasilitas-kesehatan-kota-bandung">Jumlah
+                        Tenaga Kesmas dan Kesling di Fasilitas Kesehatan Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data jumlah tenaga Kesehatan Masyarakat (Kesmas) dan tenaga Kesehatan
+                      Keliling (Kesling) di fasilitas kesehatan Kota Bandung.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-tenaga-kesmas-dan-kesling-di-fasilitas-kesehatan-kota-bandung"
+                        class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-kematian-bayi-1-tahun-di-kota-bandung">Jumlah Kematian Bayi di Kota
+                        Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data jumlah kematian bayi di Kota Bandung berdasarkan kecamatan dan
+                      puskesmas.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-kematian-bayi-1-tahun-di-kota-bandung" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-kematian-ibu-hamil">Jumlah Kematian Ibu Hamil di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi mengenai data jumlah kematian ibu hamil yang terjadi di beberapa kecamatan
+                      dan puskesmas Kota Bandung.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-kematian-ibu-hamil" class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/pengukuran-tekanan-darah-penduduk-15-tahun-di-kota-bandung">Pengukuran Tekanan
+                        Darah Penduduk &gt;=15 Tahun di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data pengukuran tekanan darah penduduk &gt;= 15 tahun di Kota Bandung.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/pengukuran-tekanan-darah-penduduk-15-tahun-di-kota-bandung" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/pengukuran-tekanan-darah-penduduk-18-tahun-di-kota-bandung">Pengukuran Tekanan
+                        Darah Penduduk &gt;=18 Tahun di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data pengukuran tekanan darah penduduk &gt;=18 tahun serta data penduduk
+                      yang mengalami hipertensi di Kota Bandung.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/pengukuran-tekanan-darah-penduduk-18-tahun-di-kota-bandung" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/angka-kematian-pasien-tb-paru-bta-plus-kota-bandung">Angka Kematian Pasien TB
+                        Paru BTA (Plus) di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data angka kematian pasien TB Paru BTA(plus) di Kota Bandung berdasarkan UPT
+                      Puskesmas dan fasilitas kesehatan.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/angka-kematian-pasien-tb-paru-bta-plus-kota-bandung" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/angka-kesembuhan-pasien-tb-paru-bta-kota-bandung">Angka Kesembuhan Pasien TB
+                        Paru BTA (Plus) di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data angka kesembuhan pasien TB Paru BTA+ di Kota Bandung berdasarkan UPT
+                      Puskesmas dan fasilitas kesehatan lainnya.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/angka-kesembuhan-pasien-tb-paru-bta-kota-bandung" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-kasus-tb-anak-0-14-tahun-di-kota-bandung">Jumlah Kasus TB Anak 0-14 Tahun
+                        di Kota Bandung</a>
+                    </h3>
+                    <div>
+                      Konsep &amp; Definisi : Dataset ini berisi data jumlah kasus TB anak 0-14 tahun di Kota Bandung.
+                      Metadata :...</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-kasus-tb-anak-0-14-tahun-di-kota-bandung" class="label"
+                        data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-bayi-6-bulan-diberi-asi-eksklusif-menurut-puskesmas-di-kota-bandung">Jumlah
+                        Bayi &lt; 6 Bulan Diberi ASI Eksklusif Menurut Puskesmas di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data bayi &lt; 6 bulan diberi ASI Eksklusif menurut puskesmas di Kota
+                      Bandung.</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-bayi-6-bulan-diberi-asi-eksklusif-menurut-puskesmas-di-kota-bandung"
+                        class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-cakupan-bayi-yang-diimunisasi-bcg-menurut-puskesmas-di-kota-bandung">Jumlah
+                        Cakupan Bayi Yang Diimunisasi BCG Menurut Puskesmas di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi Jumlah cakupan bayi yang diimunisasi BCG menurut puskesmas di Kota Bandung.
+                    </div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-cakupan-bayi-yang-diimunisasi-bcg-menurut-puskesmas-di-kota-bandung"
+                        class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-cakupan-bayi-yang-diimunisasi-campak-menurut-puskesmas-di-kota-bandung">Jumlah
+                        Cakupan Bayi Yang Diimunisasi Campak Menurut Puskesmas di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data jumlah cakupan bayi yang diimunisasi campak menurut puskesmas di Kota
+                      Bandung</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-cakupan-bayi-yang-diimunisasi-campak-menurut-puskesmas-di-kota-bandung"
+                        class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+                <!-- Snippet snippets/package_item.html start -->
+                <li class="dataset-item">
+                  <div class="dataset-content">
+                    <h3 class="dataset-heading">
+                      <a href="/dataset/jumlah-cakupan-bayi-yang-diimunisasi-polio-menurut-puskesmas-di-kota-bandung">Jumlah
+                        Cakupan Bayi Yang Diimunisasi Polio Menurut Puskesmas di Kota Bandung</a>
+                    </h3>
+                    <div>Dataset ini berisi data Jumlah cakupan bayi yang diimunisasi polio menurut puskesmas di Kota
+                      Bandung</div>
+                  </div>
+                  <ul class="dataset-resources unstyled">
+                    <li>
+                      <a href="/dataset/jumlah-cakupan-bayi-yang-diimunisasi-polio-menurut-puskesmas-di-kota-bandung"
+                        class="label" data-format="csv">CSV</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Snippet snippets/package_item.html end -->
+              </ul>
+              <!-- Snippet snippets/package_list.html end -->
+            </div>
+            <div class='pagination pagination-centered'>
+              <ul>
+                <li class="active"><a href="/dataset?page=1">1</a></li>
+                <li><a href="/dataset?page=2">2</a></li>
+                <li><a href="/dataset?page=3">3</a></li>
+                <li class="disabled"><a href="#">...</a></li>
+                <li><a href="/dataset?page=153">153</a></li>
+                <li><a href="/dataset?page=2">»</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="module">
+            <div class="module-content">
+              <small>
+                You can also access this registry using the <a href="/api/3">API</a> (see <a
+                  href="http://docs.ckan.org/en/ckan-2.4.6/api/">API Docs</a>).
+              </small>
+            </div>
+          </section>
+        </div>
+        <aside class="secondary span3">
+          <div class="filters">
+            <div>
+              <!-- Snippet snippets/facet_list.html start -->
+              <section class="module module-narrow module-shallow">
+                <h2 class="module-heading">
+                  <i class="icon-medium icon-filter"></i>
+                  Organizations
+                </h2>
+                <nav>
+                  <ul class="unstyled nav nav-simple nav-facet">
+                    <li class="nav-item">
+                      <a href="/dataset?organization=dinas-pendidikan" title="">
+                        <span>Dinas Pendidikan (261)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?organization=dinas-pengendalian-penduduk-dan-keluarga-berencana"
+                        title="Dinas Pengendalian Penduduk dan Keluarga Berencana">
+                        <span>Dinas Pengendalian ... (94)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?organization=dinas-kesehatan" title="">
+                        <span>Dinas Kesehatan (92)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?organization=kecamatan-batununggal" title="">
+                        <span>Kecamatan Batununggal (78)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?organization=kecamatan-gedebage" title="">
+                        <span>Kecamatan Gedebage (69)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?organization=kecamatan-regol" title="">
+                        <span>Kecamatan Regol (68)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?organization=kecamatan-cicendo" title="">
+                        <span>Kecamatan Cicendo (67)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?organization=kecamatan-bojongloa-kidul" title="Kecamatan Bojongloa Kidul">
+                        <span>Kecamatan Bojongloa... (67)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?organization=kecamatan-kiaracondong" title="">
+                        <span>Kecamatan Kiaracondong (66)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?organization=kecamatan-arcamanik" title="">
+                        <span>Kecamatan Arcamanik (66)</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <p class="module-footer">
+                  <a href="/dataset?_organization_limit=0" class="read-more">Show More Organizations</a>
+                </p>
+              </section>
+              <!-- Snippet snippets/facet_list.html end -->
+              <!-- Snippet snippets/facet_list.html start -->
+              <section class="module module-narrow module-shallow">
+                <h2 class="module-heading">
+                  <i class="icon-medium icon-filter"></i>
+                  Groups
+                </h2>
+                <nav>
+                  <ul class="unstyled nav nav-simple nav-facet">
+                    <li class="nav-item">
+                      <a href="/dataset?groups=ekonomi-dan-keuangan" title="">
+                        <span>Ekonomi dan Keuangan (827)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?groups=sosial" title="">
+                        <span>Sosial (785)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?groups=administrasi-pemerintahan" title="Administrasi Pemerintahan">
+                        <span>Administrasi Pemeri... (398)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?groups=lingkungan" title="">
+                        <span>Lingkungan Hidup (302)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?groups=pendidikan" title="">
+                        <span>Pendidikan (296)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?groups=infrastruktur" title="">
+                        <span>Infrastruktur (225)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?groups=kesehatan" title="">
+                        <span>Kesehatan (185)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?groups=kependudukan" title="">
+                        <span>Kependudukan (60)</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <p class="module-footer">
+                </p>
+              </section>
+              <!-- Snippet snippets/facet_list.html end -->
+              <!-- Snippet snippets/facet_list.html start -->
+              <section class="module module-narrow module-shallow">
+                <h2 class="module-heading">
+                  <i class="icon-medium icon-filter"></i>
+                  Tags
+                </h2>
+                <nav>
+                  <ul class="unstyled nav nav-simple nav-facet">
+                    <li class="nav-item">
+                      <a href="/dataset?tags=kecamatan" title="">
+                        <span>kecamatan (1578)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?tags=kelurahan" title="">
+                        <span>kelurahan (209)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?tags=pendidikan" title="">
+                        <span>pendidikan (165)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?tags=administrasi" title="">
+                        <span>administrasi (165)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?tags=wilayah" title="">
+                        <span>wilayah (163)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?tags=batas" title="">
+                        <span>batas (150)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?tags=swakelola" title="">
+                        <span>swakelola (132)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?tags=serapan+anggaran" title="">
+                        <span>serapan anggaran (104)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?tags=rup" title="">
+                        <span>rup (93)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?tags=bandung" title="">
+                        <span>bandung (79)</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <p class="module-footer">
+                  <a href="/dataset?_tags_limit=0" class="read-more">Show More Tags</a>
+                </p>
+              </section>
+              <!-- Snippet snippets/facet_list.html end -->
+              <!-- Snippet snippets/facet_list.html start -->
+              <section class="module module-narrow module-shallow">
+                <h2 class="module-heading">
+                  <i class="icon-medium icon-filter"></i>
+                  Formats
+                </h2>
+                <nav>
+                  <ul class="unstyled nav nav-simple nav-facet">
+                    <li class="nav-item">
+                      <a href="/dataset?res_format=CSV" title="">
+                        <span>CSV (2851)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?res_format=GeoJSON" title="">
+                        <span>GeoJSON (189)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?res_format=PDF" title="">
+                        <span>PDF (1)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/dataset?res_format=JPEG" title="">
+                        <span>JPEG (1)</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <p class="module-footer">
+                </p>
+              </section>
+              <!-- Snippet snippets/facet_list.html end -->
+              <!-- Snippet snippets/facet_list.html start -->
+              <section class="module module-narrow module-shallow">
+                <h2 class="module-heading">
+                  <i class="icon-medium icon-filter"></i>
+                  Licenses
+                </h2>
+                <nav>
+                  <ul class="unstyled nav nav-simple nav-facet">
+                    <li class="nav-item">
+                      <a href="/dataset?license_id=cc-by" title="Creative Commons Attribution">
+                        <span>Creative Commons At... (3041)</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <p class="module-footer">
+                </p>
+              </section>
+              <!-- Snippet snippets/facet_list.html end -->
+            </div>
+            <a class="close no-text hide-filters"><i class="icon-remove-sign"></i><span class="text">close</span></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="span8 footer-links">
+          <ul class="unstyled">
+            <li><a href="/about">About Portal Data Kota Bandung</a></li>
+          </ul>
+          <ul class="unstyled">
+            <li><a href="http://docs.ckan.org/en/ckan-2.4.6/api/">CKAN API</a></li>
+            <li><a href="http://www.okfn.org/">Open Knowledge Foundation</a></li>
+            <li><a href="http://www.opendefinition.org/okd/"><img src="../assets/images/od_80x15_blue.png"></a></li>
+          </ul>
+        </div>
+        <div class="span4 attribution">
+          <!-- <p><strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a></p> -->
+          <p><strong>Powered by CKAN</strong></p>
+          <script type="text/javascript" src="https://freehitcounters.org/count/5zlc"></script>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-85799816-1', 'auto');
+  ga('send', 'pageview');
+</script>		
+<script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/select2.min.js">
+</script>
+<script type="text/javascript" src="../assets/js/jquery-inherit.min.js">
+</script>
+<script type="text/javascript" src="../assets/js/medium-editor.min.js">
+</script> 
+</body>
+
+</html>

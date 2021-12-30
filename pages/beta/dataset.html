@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Portal Data Kota Bandung</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="../../assets-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets-beta/vendor/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="../../assets-beta/vendor/datatables/datatables.min.css">
+    <link rel="stylesheet" href="../../assets-beta/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets-beta/css/select.bootstrap4.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../../assets-beta/css/style.css">
+    <link rel="stylesheet" href="../../assets-beta/vendor/stisla/assets/css/components.css">
+
+    <!-- Rating CSS -->
+    <link rel="stylesheet" href="../../assets-beta/css/star-rating-svg.css">
+
+    <!-- Favicon Assets -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="http://data.bandung.go.id/beta/assets/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="http://data.bandung.go.id/beta/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="http://data.bandung.go.id/beta/assets/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="http://data.bandung.go.id/beta/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="http://data.bandung.go.id/beta/assets/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff"> -->
+
+</head>
+
+<body class="layout-3">
+    <div id="app">
+        <div class="main-wrapper container">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar container">
+                <a href="http://data.bandung.go.id/beta/index.php/portal" class="navbar-brand sidebar-gone-hide">
+                    <img src="http://data.bandung.go.id/beta/assets/img/logo_square_white.png" width="30" height="30"
+                        class="d-inline-block align-top" alt="">
+                    Portal Data Kota Bandung
+                </a>
+                <a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
+            </nav>
+
+            <nav class="navbar navbar-secondary navbar-expand-lg">
+                <div class="container">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a href="http://data.bandung.go.id/beta/index.php/portal/" class="nav-link"><i
+                                    class="fas fa-home"></i><span>Beranda</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="http://data.bandung.go.id/beta/index.php/portal/dataset" class="nav-link"><i
+                                    class="fas fa-archive"></i><span>Dataset</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="http://data.bandung.go.id/beta/index.php/portal/organisasi" class="nav-link"><i
+                                    class="fas fa-building"></i><span>Organisasi</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="http://data.bandung.go.id/beta/index.php/portal/grup" class="nav-link"><i
+                                    class="fas fa-users"></i><span>Grup</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" data-toggle="dropdown" class="nav-link has-dropdown"><i
+                                    class="fas fa-fire"></i><span>Aplikasi</span></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="http://data.bandung.go.id/arimbi"
+                                        class="nav-link">ARIMBI</a></li>
+                                <li class="nav-item"><a href="http://data.bandung.go.id/dashboard"
+                                        class="nav-link">Bandung City Dashboard</a></li>
+                                <li class="nav-item"><a href="http://data.bandung.go.id/apbd" class="nav-link">Open Data
+                                        APBD</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://data.bandung.go.id/beta/index.php/portal/folder" class="nav-link"><i
+                                    class="fas fa-folder"></i><span>Folder</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://data.bandung.go.id/beta/index.php/monev" class="nav-link"><i
+                                    class="fas fa-tachometer-alt"></i><span>Monitoring dan Evaluasi</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="section">
+                    <div class="section-header">
+                        <h1>Dataset</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item ">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal">Beranda</a>
+                            </div>
+                            <div class="breadcrumb-item active">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/dataset">Dataset</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-body">
+                        <p class="lead">
+                            Dataset atau kumpulan data merupakan data-data yang disatukan menjadi sebuah kumpulan dengan
+                            judul yang sama.
+                        </p>
+                        <form action="http://data.bandung.go.id/beta/index.php/portal/dataset" method="get">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Cari Data..." name="keywords"
+                                        value="">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button">
+                                            <i class="fas fa-search"></i> Cari
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- <div class="my-2 text-right">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#filterSearch">
+					<i class="fas fa-sliders-h"></i> Filter Pencarian
+				</button>
+			</div> -->
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Rumah Memenuhi Syarat Sehat di Kota Bandung
+                                </h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-28T08:29:33.767666">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 6 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Dataset ini berisi data jumlah rumah memenuhi syarat sehat di Kota
+                                    Bandung.</p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/299d0359-9a73-47aa-a8e5-89ea98d3c994"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/299d0359-9a73-47aa-a8e5-89ea98d3c994"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Pelayanan Kesehatan Gigi dan Mulut Menurut
+                                    Puskesmas di Kota Bandung</h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-28T07:13:46.991675">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 6 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Dataset ini berisi jumlah pelayanan Kesehatan Gigi dan Mulut di
+                                    puskesmas setiap kecamatan di Kota Bandung</p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/3af60afe-7d1c-4f4e-ade0-214b820ca9c2"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/3af60afe-7d1c-4f4e-ade0-214b820ca9c2"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Penduduk Dengan Akses Sumber Air Minum
+                                    Berkualitas Serta Memenuhi Syarat</h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-28T04:47:45.577976">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 6 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Dataset ini berisi mengenai data jumlah penduduk dengan akses
+                                    sumber air minum berkualitas dan memenuhi syarat menurut kecamatan di Kota Bandung
+                                </p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/88ec15c9-7435-4305-a00c-2c492e6f6ff1"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/88ec15c9-7435-4305-a00c-2c492e6f6ff1"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Tenaga Administrasi Kesehatan di Fasilitas
+                                    Kesehatan</h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-28T03:56:56.825087">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 6 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Dataset ini berisi jumlah tenaga administrasi kesehatan (Pejabat
+                                    Struktural, Staf Penunjang Administrasi, Staf Penunjang Teknologi, Staf Penunjang
+                                    Perencanaan, Tenaga Pendidik, Tenaga Kependidikan, Juru, Tenaga Penunjang Kesehatan
+                                    Lainnya) di fasilitas kesehatan Kota Bandung. </p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/723f3e1d-abd9-482c-9129-e048faf664e4"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/723f3e1d-abd9-482c-9129-e048faf664e4"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Bidan dan Perawat di Fasilitas Kesehatan Kota
+                                    Bandung</h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-28T03:07:15.182456">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 6 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Dataset ini berisi data jumlah bidan dan perawat di fasilitas
+                                    kesehatan Kota Bandung.</p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/a9dee14e-755f-441f-8a82-cc9b39d7e5a7"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/a9dee14e-755f-441f-8a82-cc9b39d7e5a7"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Balita Usia 12-59 Bulan yang Mendapat Vitamin
+                                    A Menurut Puskesmas di Kota Bandung</h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-24T14:40:06.675604">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 6 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Dataset ini berisi data jumlah balita usia 12-59 bulan yang
+                                    mendapat vitamin A menurut puskesmas di Kota Bandung.</p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/5cb4407f-ba1c-4c74-b9b1-42f66e2fe847"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/5cb4407f-ba1c-4c74-b9b1-42f66e2fe847"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Bayi Usia 6-11 Bulan yang Mendapat Vitamin A
+                                    Menurut Puskesmas di Kota Bandung</h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-24T09:18:59.253535">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 6 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Dataset ini berisi data jumlah bayi usia 6-11 bulan yang mendapat
+                                    vitamin A Menurut Puskesmas di Kota Bandung</p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/1da8804f-2914-40c2-aa6e-a74a34d25a07"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/1da8804f-2914-40c2-aa6e-a74a34d25a07"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Dokter di Fasilitas Kesehatan Kota Bandung
+                                </h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-24T06:56:10.385478">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 6 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">* Konsep & Definisi : Dataset ini berisi data Jumlah Dokter
+                                    Spesialis, Dokter Umum, Dokter Gigi dan Dokter Gigi Spesialis menurut Sarana
+                                    Pelayanan Kesehatan di Kota Bandung
+
+                                    * Metadata : http://data.bandung.go.id/beta/index.php/portal/kamus_data/kd-b85dcc67
+
+                                </p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/3cd4b6fb-8ac0-49bf-bd06-f5616929cb07"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/3cd4b6fb-8ac0-49bf-bd06-f5616929cb07"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Tenaga Kesmas dan Kesling di Fasilitas
+                                    Kesehatan Kota Bandung</h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-24T05:04:22.888326">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 6 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Dataset ini berisi data jumlah tenaga Kesehatan Masyarakat (Kesmas)
+                                    dan tenaga Kesehatan Keliling (Kesling) di fasilitas kesehatan Kota Bandung.</p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/b80dcf91-1f7e-49be-a912-bc6984ff25db"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/b80dcf91-1f7e-49be-a912-bc6984ff25db"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4><i class="fas fa-archive"></i> Jumlah Kematian Bayi di Kota Bandung</h4>
+                                <div class="card-header-action">
+                                    <small>
+                                        <!-- <a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="card-link"><i class="fas fa-building"></i> Dinas Kesehatan</a> &#8259; -->
+                                        <input type="hidden" id="dataTime" value="2021-12-24T04:27:07.397183">
+                                        <span class="text-primary"><i class="fas fa-calendar-alt"></i> <span
+                                                id="parsedDataTime"></span> &#8259;</span>
+                                        <span class="text-warning"><i class="fas fa-copy"></i> Berisi 4 data</span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Dataset ini berisi data jumlah kematian bayi di Kota Bandung
+                                    berdasarkan kecamatan dan puskesmas.</p>
+                            </div>
+                            <div class="card-footer bg-whitesmoke">
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/39b9eec9-74a0-4422-af70-b227ce9cb8de"
+                                    class="btn btn-danger"><i class="fas fa-eye"></i> Lihat Dataset</a>
+                                <a href="http://data.bandung.go.id/beta/index.php/portal/download/package/39b9eec9-74a0-4422-af70-b227ce9cb8de"
+                                    class="btn btn-info ml-2"><i class="fas fa-cloud-download-alt"></i> Unduh
+                                    Dataset</a>
+                            </div>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a href="http://data.bandung.go.id/beta/index.php/portal/dataset/10"
+                                    class="page-link" data-ci-pagination-page="2">2</a></li>
+                            <li class="page-item"><a href="http://data.bandung.go.id/beta/index.php/portal/dataset/20"
+                                    class="page-link" data-ci-pagination-page="3">3</a></li>
+                            <li class="page-item"><a href="http://data.bandung.go.id/beta/index.php/portal/dataset/30"
+                                    class="page-link" data-ci-pagination-page="4">4</a></li>
+                            <li class="page-item"><a href="http://data.bandung.go.id/beta/index.php/portal/dataset/10"
+                                    class="page-link" data-ci-pagination-page="2" rel="next">&gt;</a>
+                            <li class="page-item"><a href="http://data.bandung.go.id/beta/index.php/portal/dataset/3040"
+                                    class="page-link" data-ci-pagination-page="305">Last &rsaquo;</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="filterSearch" tabindex="-1" role="dialog" aria-labelledby="filterSearchLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="filterSearchLabel">
+                                <i class="fas fa-sliders-h"></i> Filter Pencarian
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="http://data.bandung.go.id/beta/index.php/portal/dataset" method="get"
+                                accept-charset="utf-8">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Organisasi</label>
+                                    <select class="custom-select" name="ogranization">
+                                        <option value="">Organisasi</option>
+                                        <option value="badan-kepegawaian-dan-pengembangan-sumber-daya-manusia">Badan
+                                            Kepegawaian Dan Pengembangan Sumber Daya Manusia</option>
+                                        <option value="badan-kesatuan-bangsa-dan-politik">Badan Kesatuan Bangsa Dan
+                                            Politik</option>
+                                        <option value="badan-keuangan-dan-aset-daerah">Badan Keuangan Dan Aset Daerah
+                                        </option>
+                                        <option value="badan-meteorologi-dan-geofisika">Badan Meteorologi Dan Geofisika
+                                        </option>
+                                        <option value="badan-pendapatan-daerah">Badan Pendapatan Daerah</option>
+                                        <option value="badan-perencanaan-pembangunan-penelitian-dan-pembangunan">Badan
+                                            Perencanaan Pembangunan Penelitian Dan Pembangunan</option>
+                                        <option value="badan-pusat-statistik">Badan Pusat Statistik</option>
+                                        <option value="balai-besar-wilayah-sungai-citarum">Balai Besar Wilayah Sungai
+                                            Citarum</option>
+                                        <option value="dinas-arsip-dan-perpustakaan">Dinas Arsip Dan Perpustakaan
+                                        </option>
+                                        <option value="dinas-cipta-kaya-bina-konstruksi-dan-tata-ruang">Dinas Cipta Kaya
+                                            Bina Konstruksi Dan Tata Ruang</option>
+                                        <option
+                                            value="dinas-dinas-ketahanan-pangan-dan-pertanian-pertanian-dan-ketahanan-pangan">
+                                            Dinas Dinas Ketahanan Pangan Dan Pertanian Pertanian Dan Ketahanan Pangan
+                                        </option>
+                                        <option value="dinas-kebudayaan-dan-pariwisata">Dinas Kebudayaan Dan Pariwisata
+                                        </option>
+                                        <option value="dinas-kependudukan-dan-pencatatan-sipil">Dinas Kependudukan Dan
+                                            Pencatatan Sipil</option>
+                                        <option value="dinas-kesehatan">Dinas Kesehatan</option>
+                                        <option value="dinas-ketenagakerjaan">Dinas Ketenagakerjaan</option>
+                                        <option value="dinas-komunikasi-dan-informatika">Dinas Komunikasi Dan
+                                            Informatika</option>
+                                        <option value="dinas-koperasi-dan-usaha-kecil-dan-menengah">Dinas Koperasi Dan
+                                            Usaha Kecil Dan Menengah</option>
+                                        <option value="dinas-lingkungan-hidup">Dinas Lingkungan Hidup</option>
+                                        <option value="dinas-pemberdayaan-perempuan-dan-perlindungan-anak">Dinas
+                                            Pemberdayaan Perempuan Dan Perlindungan Anak</option>
+                                        <option value="dinas-pemuda-dan-olahraga">Dinas Pemuda Dan Olahraga</option>
+                                        <option value="dinas-penanaman-modal-dan-ptsp">Dinas Penanaman Modal Dan Ptsp
+                                        </option>
+                                        <option value="dinas-pencegahan-dan-penanggulangan-kebakaran">Dinas Pencegahan
+                                            Dan Penanggulangan Kebakaran</option>
+                                        <option value="dinas-pendidikan">Dinas Pendidikan</option>
+                                        <option value="dinas-pengendalian-penduduk-dan-keluarga-berencana">Dinas
+                                            Pengendalian Penduduk Dan Keluarga Berencana</option>
+                                        <option value="dinas-perdagangan-dan-perindustrian">Dinas Perdagangan Dan
+                                            Perindustrian</option>
+                                        <option value="dinas-perhubungan">Dinas Perhubungan</option>
+                                        <option value="dinas-perumahan-dan-kawasan-permukiman">Dinas Perumahan Dan
+                                            Kawasan Permukiman</option>
+                                        <option value="dinas-sosial">Dinas Sosial</option>
+                                        <option value="dinas-sumber-daya-air-dan-bina-marga">Dinas Sumber Daya Air Dan
+                                            Bina Marga</option>
+                                        <option value="inspektorat">Inspektorat</option>
+                                        <option value="kecamatan-andir">Kecamatan Andir</option>
+                                        <option value="kecamatan-antapani">Kecamatan Antapani</option>
+                                        <option value="kecamatan-arcamanik">Kecamatan Arcamanik</option>
+                                        <option value="kecamatan-astanaanyar">Kecamatan Astanaanyar</option>
+                                        <option value="kecamatan-babakan-ciparay">Kecamatan Babakan Ciparay</option>
+                                        <option value="kecamatan-bandung-kidul">Kecamatan Bandung Kidul</option>
+                                        <option value="kecamatan-bandung-kulon">Kecamatan Bandung Kulon</option>
+                                        <option value="kecamatan-bandung-wetan">Kecamatan Bandung Wetan</option>
+                                        <option value="kecamatan-batununggal">Kecamatan Batununggal</option>
+                                        <option value="kecamatan-bojongloa-kaler">Kecamatan Bojongloa Kaler</option>
+                                        <option value="kecamatan-bojongloa-kidul">Kecamatan Bojongloa Kidul</option>
+                                        <option value="kecamatan-buahbatu">Kecamatan Buahbatu</option>
+                                        <option value="kecamatan-cibeunying-kaler">Kecamatan Cibeunying Kaler</option>
+                                        <option value="kecamatan-cibeunying-kidul">Kecamatan Cibeunying Kidul</option>
+                                        <option value="kecamatan-cibiru">Kecamatan Cibiru</option>
+                                        <option value="kecamatan-cicendo">Kecamatan Cicendo</option>
+                                        <option value="kecamatan-cidadap">Kecamatan Cidadap</option>
+                                        <option value="kecamatan-cinambo">Kecamatan Cinambo</option>
+                                        <option value="kecamatan-coblong">Kecamatan Coblong</option>
+                                        <option value="kecamatan-gedebage">Kecamatan Gedebage</option>
+                                        <option value="kecamatan-kiaracondong">Kecamatan Kiaracondong</option>
+                                        <option value="kecamatan-lengkong">Kecamatan Lengkong</option>
+                                        <option value="kecamatan-mandalajati">Kecamatan Mandalajati</option>
+                                        <option value="kecamatan-panyileukan">Kecamatan Panyileukan</option>
+                                        <option value="kecamatan-rancasari">Kecamatan Rancasari</option>
+                                        <option value="kecamatan-regol">Kecamatan Regol</option>
+                                        <option value="kecamatan-sukajadi">Kecamatan Sukajadi</option>
+                                        <option value="kecamatan-sukasari">Kecamatan Sukasari</option>
+                                        <option value="kecamatan-sumur-bandung">Kecamatan Sumur Bandung</option>
+                                        <option value="kecamatan-ujungberung">Kecamatan Ujungberung</option>
+                                        <option value="otoritas-jasa-keuangan-kantor-regional-2-jawa-barat">Otoritas
+                                            Jasa Keuangan Kantor Regional 2 Jawa Barat</option>
+                                        <option value="palang-merah-indonesia-kota-bandung">Palang Merah Indonesia Kota
+                                            Bandung</option>
+                                        <option value="pengadilan-negeri-bandung">Pengadilan Negeri Bandung</option>
+                                        <option value="perumda-bank-bandung">Perumda Bank Bandung</option>
+                                        <option value="perusahaan-daerah-air-minum-tirtawening">Perusahaan Daerah Air
+                                            Minum Tirtawening</option>
+                                        <option value="perusahaan-daerah-kebersihan">Perusahaan Daerah Kebersihan
+                                        </option>
+                                        <option value="perusahaan-daerah-pasar-bermartabat">Perusahaan Daerah Pasar
+                                            Bermartabat</option>
+                                        <option value="perusahaan-listrik-negara">Perusahaan Listrik Negara</option>
+                                        <option value="rumah-sakit-khusus-gigi-dan-mulut">Rumah Sakit Khusus Gigi Dan
+                                            Mulut</option>
+                                        <option value="rumah-sakit-khusus-ibu-dan-anak">Rumah Sakit Khusus Ibu Dan Anak
+                                        </option>
+                                        <option value="rumah-sakit-umum-daerah">Rumah Sakit Umum Daerah</option>
+                                        <option value="satuan-polisi-pamong-praja">Satuan Polisi Pamong Praja</option>
+                                        <option value="sekretariat-daerah">Sekretariat Daerah</option>
+                                        <option value="sekretariat-dprd">Sekretariat Dprd</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Grup</label>
+                                    <select class="custom-select" name="grup">
+                                        <option value="">Grup</option>
+                                        <option value="administrasi-pemerintahan">Administrasi Pemerintahan</option>
+                                        <option value="ekonomi-dan-keuangan">Ekonomi Dan Keuangan</option>
+                                        <option value="infrastruktur">Infrastruktur</option>
+                                        <option value="kependudukan">Kependudukan</option>
+                                        <option value="kesehatan">Kesehatan</option>
+                                        <option value="lingkungan">Lingkungan</option>
+                                        <option value="pendidikan">Pendidikan</option>
+                                        <option value="sosial">Sosial</option>
+                                    </select>
+                                </div>
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        <i class="fas fa-times"></i> Tutup
+                                    </button>
+                                    <button type="submit" class="btn btn-success">
+                                        <i class="fas fa-check"></i> Terapkan Filter
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            </hr>
+            <footer class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md">
+                        <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png"
+                            alt="cc-by-sa" style="max-width: 50%">
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Aplikasi Open Data</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="http://data.bandung.go.id/arimbi">ARIMBI</a></li>
+                            <li><a class="text-muted" href="http://data.bandung.go.id/dashboard">Bandung City
+                                    Dashboard</a></li>
+                            <li><a class="text-muted" href="http://data.bandung.go.id/apbd">Portal APBD Kota Bandung</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Atribusi</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="https://ckan.org/">CKAN</a></li>
+                            <li><a class="text-muted" href="https://okfn.org/">Open Knowledge Foundation</a></li>
+                            <li><a class="text-muted" href="https://flourish.studio//">Flourish Studio</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Mitra</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="https://ogi.bappenas.go.id/">Open Government Indonesia</a>
+                            </li>
+                            <li><a class="text-muted" href="https://data.go.id/">Satu Data Indonesia</a></li>
+                            <li><a class="text-muted" href="https://jabarprov.go.id">Provinsi Jawa Barat</a></li>
+                            <li><a class="text-muted" href="http://data.jabarprov.go.id">Satu Data Jawa Barat</a></li>
+                            <li><a class="text-muted" href="https://bandung.go.id">Pemerintah Kota Bandung</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Tentang</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted"
+                                    href="https://opendatabdg.gitbook.io/dokumentasi/introduksi/visi-dan-misi">Visi -
+                                    Misi</a></li>
+                            <li><a class="text-muted"
+                                    href="https://opendatabdg.gitbook.io/dokumentasi/introduksi/visi-dan-misi">Inisiatif</a>
+                            </li>
+                            <li><a class="text-muted"
+                                    href="https://opendatabdg.gitbook.io/dokumentasi/kontak/kontak-dan-narahubung">Kontak</a>
+                            </li>
+                            <li><a class="text-muted"
+                                    href="https://opendatabdg.gitbook.io/dokumentasi/kegiatan-dan-kemitraan/kemitraan-dan-kolaborasi">Kolaborasi</a>
+                            </li>
+                            <li><a class="text-muted" href="#">Penggunaan Data Pengunjung</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"
+                charset="utf-8"></script>
+            <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" type="text/javascript"
+                charset="utf-8"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.3/papaparse.min.js" type="text/javascript"
+                charset="utf-8"></script>
+            <!-- General JS Scripts -->
+            <!-- <script src="http://data.bandung.go.id/beta/assets/theme/stisla/modules/jquery.min.js"></script> -->
+            <script src="../../assets-beta/js/popper.js"></script>
+            <script src="../../assets-beta/js/tooltip.js"></script>
+            <!-- <script src="http://data.bandung.go.id/beta/assets/theme/stisla/modules/bootstrap/js/bootstrap.min.js"></script> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"
+                integrity="sha512-zMfrMAZYAlNClPKjN+JMuslK/B6sPM09BGvrWlW+cymmPmsUT1xJF3P4kxI3lOh9zypakSgWaTpY6vDJY/3Dig=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+                integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="../../assets-beta/js/stisla.js"></script>
+
+            <!-- JS Libraies -->
+
+            <!-- Page Specific JS File -->
+
+            <!-- Template JS File -->
+            <script src="../../assets-beta/js/scripts.js"></script>
+            <script src="../../assets-beta/js/custom.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/id.js" type="text/javascript"
+                charset="utf-8"></script>
+            <script src="../../assets-beta/js/jquery.star-rating-svg.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+            <script src="../../assets-beta/js/portaldata.js"></script>
+</body>
+
+</html>
