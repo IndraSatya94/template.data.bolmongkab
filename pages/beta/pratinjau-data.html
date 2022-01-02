@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Portal Data Kabupaten Bolaang Mongondow</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="../../assets-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets-beta/vendor/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="../../assets-beta/vendor/datatables/datatables.min.css">
+    <link rel="stylesheet" href="../../assets-beta/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets-beta/css/select.bootstrap4.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../../assets-beta/css/style.css">
+    <link rel="stylesheet" href="../../assets-beta/vendor/stisla/assets/css/components.css">
+
+    <!-- Rating CSS -->
+    <link rel="stylesheet" href="../../assets-beta/css/star-rating-svg.css">
+
+    <!-- Favicon Assets -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="http://data.bandung.go.id/beta/assets/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="http://data.bandung.go.id/beta/assets/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="http://data.bandung.go.id/beta/assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="http://data.bandung.go.id/beta/assets/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="http://data.bandung.go.id/beta/assets/favicon/favicon-16x16.png">
+   <link rel="manifest" href="http://data.bandung.go.id/beta/assets/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff"> -->
+
+</head>
+
+<body class="layout-3">
+	<div id="app">
+		<div class="main-wrapper container">
+			<div class="navbar-bg"></div>
+			<nav class="navbar navbar-expand-lg main-navbar container">
+				<a href="http://data.bandung.go.id/beta/index.php/portal" class="navbar-brand sidebar-gone-hide">
+					<img src="http://data.bandung.go.id/beta/assets/img/logo_square_white.png" width="30" height="30" class="d-inline-block align-top" alt="">
+					Portal Data Kota Bandung
+				</a>
+				<a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
+			</nav>
+
+			<nav class="navbar navbar-secondary navbar-expand-lg">
+				<div class="container">
+					<ul class="navbar-nav">
+						<li class="nav-item ">
+							<a href="http://data.bandung.go.id/beta/index.php/portal/" class="nav-link"><i class="fas fa-home"></i><span>Beranda</span></a>
+						</li>
+						<li class="nav-item ">
+							<a href="http://data.bandung.go.id/beta/index.php/portal/dataset" class="nav-link"><i class="fas fa-archive"></i><span>Dataset</span></a>
+						</li>
+						<li class="nav-item ">
+							<a href="http://data.bandung.go.id/beta/index.php/portal/organisasi" class="nav-link"><i class="fas fa-building"></i><span>Organisasi</span></a>
+						</li>
+						<li class="nav-item ">
+							<a href="http://data.bandung.go.id/beta/index.php/portal/grup" class="nav-link"><i class="fas fa-users"></i><span>Grup</span></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" data-toggle="dropdown" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Aplikasi</span></a>
+							<ul class="dropdown-menu">
+								<li class="nav-item"><a href="http://data.bandung.go.id/arimbi" class="nav-link">ARIMBI</a></li>
+								<li class="nav-item"><a href="http://data.bandung.go.id/dashboard" class="nav-link">Bandung City Dashboard</a></li>
+								<li class="nav-item"><a href="http://data.bandung.go.id/apbd" class="nav-link">Open Data APBD</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="http://data.bandung.go.id/beta/index.php/portal/folder" class="nav-link"><i class="fas fa-folder"></i><span>Folder</span></a>
+						</li>
+						<li class="nav-item">
+							<a href="http://data.bandung.go.id/beta/index.php/monev" class="nav-link"><i class="fas fa-tachometer-alt"></i><span>Monitoring dan Evaluasi</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav><div class="main-content">
+	<section class="section">
+		<div class="section-header">
+			<h1>Dinas Kesehatan</h1>
+			<div class="section-header-breadcrumb">
+				<div class="breadcrumb-item active">
+					<a href="http://data.bandung.go.id/beta/index.php/portal/dataset">Dataset</a>
+				</div>
+				<div class="breadcrumb-item">
+					<a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan">Dinas Kesehatan</a>
+				</div>
+				<div class="breadcrumb-item">
+					 Jumlah Rumah...				</div>
+			</div>
+		</div>
+		<div class="section-body">
+			<h2 class="section-title">
+				Tahun 2015 - Data Jumlah Rumah Memenuhi Syarat Sehat			</h2>
+			<p class="section-lead">
+				<p>Data ini berisi kolom :</p>
+
+<ul>
+<li>Kode kecamatan</li>
+<li>Kecamatan</li>
+<li>Jumlah Rumah</li>
+<li>Jumlah Rumah Memenuhi Syarat (Rumah Sehat)</li>
+</ul>
+			</p>
+							<p class="section-lean"></p>
+				<div class="row">
+					<div class="col-12">
+						<div class="card card-primary">
+							<div class="card-header">
+								<h4><i class="fas fa-tasks"></i> Rincian Data</h4>
+							</div>
+							<div class="card-body">
+								<ul class="nav nav-pills" id="myTab3" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active show" id="umum-tab3" data-toggle="tab" href="#umum" role="tab" aria-controls="umum" aria-selected="false"><i class="fas fa-info-circle"></i> Umum</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="metadata-tab3" data-toggle="tab" href="#metadata3" role="tab" aria-controls="metadata" aria-selected="true"><i class="fas fa-clipboard-check"></i> Standar Data</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="standar-tab3" data-toggle="tab" href="#standar3" role="tab" aria-controls="standar" aria-selected="false"><i class="fas fa-sync-alt"></i> Metadata, Kode Referensi & Interoperabilitas</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="kamus-tab3" data-toggle="tab" href="#kamus3" role="tab" aria-controls="kamus" aria-selected="false"><i class="fas fa-book"></i> Kamus Data</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="myTabContent2">
+									<div class="tab-pane fade active show" id="umum" role="tabpanel" aria-labelledby="umum-tab3">
+										<table class="table table-striped table-sm">
+											<thead>
+												<tr>
+													<th scope="col">Kolom</th>
+													<th scope="col">Nilai</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Tanggal Evaluasi Terakhir</td>
+													<td>
+																											07 September 2020																										</td>
+												</tr>
+												<tr>
+													<td>Ketersediaan</td>
+													<td>
+																											100%
+																										</td>
+												</tr>
+												<tr>
+													<td>Cakupan Data</td>
+													<td>
+																											Kecamatan																										</td>
+												</tr>
+												<tr>
+													<td>Biaya</td>
+													<td>Rp 0,-</td>
+												</tr>
+												<tr>
+													<td>Terakhir Diperbaharui</td>
+													<td>28 December 2021</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tab-pane fade" id="standar3" role="tabpanel" aria-labelledby="standar-tab3">
+										<table class="table table-striped table-sm">
+											<thead>
+												<tr>
+													<th scope="col">Kolom</th>
+													<th scope="col">Nilai</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Organisasi</td>
+													<td><a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" title="Dinas Kesehatan">Dinas Kesehatan</a></td>
+												</tr>
+												<tr>
+													<td>Dibuat</td>
+													<td>15 May 2019</td>
+												</tr>
+												<tr>
+													<td>Sumber Data</td>
+													<td>Dinas Kesehatan</td>
+												</tr>
+												<tr>
+													<td>Kode Referensi yang Digunakan pada Data</td>
+																									<td>Kamus Data Belum Dibuat</td>
+																								</tr>
+												<tr>
+													<td>Kode Kamus Data</td>
+																									<td>Kamus Data Belum Dibuat</td>
+																								</tr>
+												<tr>
+													<td>Lisensi Data</td>
+													<td><a href="http://www.opendefinition.org/licenses/cc-by" title="Creative Commons Attribution">Creative Commons Attribution</a></td>
+												</tr>
+												<tr>
+													<td>Ukuran Berkas</td>
+													<td>1.5 KB</td>
+												</tr>
+												<!-- <tr>
+													<td>Jumlah Baris dan Kolom</td>
+													<td>x Baris & y Kolom</td>
+												</tr> -->
+											</tbody>
+										</table>
+									</div>
+									<div class="tab-pane fade" id="metadata3" role="tabpanel" aria-labelledby="metadata-tab3">
+										<table class="table table-striped table-sm">
+											<thead>
+												<tr>
+													<th scope="col">Kolom</th>
+													<th scope="col">Nilai</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Konsep</td>
+													<td>-</td>
+												</tr>
+												<tr>
+													<td>Definisi</td>
+													<td>Dataset ini berisi data jumlah rumah memenuhi syarat sehat di Kota Bandung.</td>
+												</tr>
+												<tr>
+													<td>Klasifikasi/Grup</td>
+													<td><a href="http://data.bandung.go.id/beta/index.php/portal/detail_grup/kesehatan" title="Kesehatan">Kesehatan</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tab-pane fade" id="kamus3" role="tabpanel" aria-labelledby="kamus-tab3">
+																			<hr>
+										<div class="container">
+											<div class="page-error pt-2">
+												<div class="page-inner">
+													<h2 class="text-warning"><i class="fas fa-exclamation-circle fa-lg"></i></h2>
+													<div class="page-description">
+														Kamus Data Belum Dibuat
+													</div>
+												</div>
+											</div>
+										</div>
+																		</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="card card-primary">
+							<div class="card-header">
+								<h4><i class="fas fa-table"></i> Pratinjau Data</h4>
+								<div class="card-header-action">
+									<a href="http://data.bandung.go.id/beta/index.php/portal/download/resource/d2a5df15-e43f-439b-b2ca-95a3f5688c45" class="btn btn-primary"><i class="fas fa-download"></i> Unduh Data (1.5 KB)</a>
+									<button id="salinAtribusi" class="btn btn-warning" data-clipboard-text="Dibuat dengan mengutip/mengolah Tahun 2015 - Data Jumlah Rumah Memenuhi Syarat Sehat pada dataset Jumlah Rumah Memenuhi Syarat Sehat di Kota Bandung, Dinas Kesehatan (Portal Data Kota Bandung, Dinas Komunikasi dan Informatika) http://data.bandung.go.id/beta/index.php/portal/detail_data/d2a5df15-e43f-439b-b2ca-95a3f5688c45. Diakses pada 30 December 2021"><i class="fas fa-copy"></i> Salin Attribusi</button>
+									<a href="http://data.bandung.go.id/beta/index.php/portal/api/d2a5df15-e43f-439b-b2ca-95a3f5688c45" class="btn btn-success"><i class="fas fa-code"></i> API</a>
+									<a href="#" class="btn btn-dark" onclick="addToFolder('d2a5df15-e43f-439b-b2ca-95a3f5688c45','http://data.bandung.go.id/beta/index.php/portal/folder/add')"><i class="fas fa-folder-plus"></i> Tambah Ke Folder</a>
+								</div>
+							</div>
+							<div class="card-body">
+								<input type="hidden" id="dataUrl" value="http://data.bandung.go.id/dataset/299d0359-9a73-47aa-a8e5-89ea98d3c994/resource/d2a5df15-e43f-439b-b2ca-95a3f5688c45/download/jumlah-rumah-memenuhi-syarat-sehat-tahun-2015.csv">
+								<input type="hidden" id="renderUrl" value="http://data.bandung.go.id/beta/index.php/portal/render">
+								<input type="hidden" id="resourceId" value="d2a5df15-e43f-439b-b2ca-95a3f5688c45">
+								<input type="hidden" id="ratingUrl" value="http://data.bandung.go.id/beta/index.php/portal/rating/add">
+								<table id="example" class="table table-striped" cellspacing="0" width="100%"></table>
+							</div>
+							<div class="card-footer bg-whitesmoke">
+								<div class="row">
+									<div class="col-6"></div>
+									<div class="col-6">
+										<div class="row text-right">
+											<div class="col-8">
+												<strong><p class="mt-1">Berapa nilai kamu untuk data ini ?</p></strong>
+											</div>
+											<div class="col-4">
+												<div class="my-rating"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+						<h5 class="my-3">Dataset Lainnya</h5>
+			<div class="row">
+							<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Jumlah Rumah Memenuhi Syarat Sehat di Kota Bandung</h5>
+							<h6 class="card-subtitle mb-2 text-muted">Dinas Kesehatan</h6>
+							<p class="card-text">Dataset ini berisi data jumlah rumah memenuhi syarat sehat di Kota Bandung.</p>
+							<a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/jumlah-rumah-memenuhi-syarat-sehat-di-kota-bandung" class="btn btn-sm btn-primary">
+								<i class="fas fa-archive"></i> Lihat Dataset
+							</a>
+							<a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="btn btn-sm btn-primary">
+								<i class="fas fa-building"></i> Lihat Organisasi
+							</a>
+						</div>
+					</div>
+				</div>
+							<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Jumlah Pelayanan Kesehatan Gigi dan Mulut Menurut Puskesmas di Kota Bandung</h5>
+							<h6 class="card-subtitle mb-2 text-muted">Dinas Kesehatan</h6>
+							<p class="card-text"> Dataset ini berisi jumlah pelayanan Kesehatan Gigi dan Mulut di puskesmas setiap kecamatan di Kota...</p>
+							<a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/jumlah-pelayanan-kesehatan-gigi-dan-mulut-menurut-puskesmas-di-kota-bandung" class="btn btn-sm btn-primary">
+								<i class="fas fa-archive"></i> Lihat Dataset
+							</a>
+							<a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="btn btn-sm btn-primary">
+								<i class="fas fa-building"></i> Lihat Organisasi
+							</a>
+						</div>
+					</div>
+				</div>
+							<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Jumlah Tenaga Administrasi Kesehatan di Fasilitas Kesehatan</h5>
+							<h6 class="card-subtitle mb-2 text-muted">Dinas Kesehatan</h6>
+							<p class="card-text"> Dataset ini berisi jumlah tenaga administrasi kesehatan (Pejabat Struktural, Staf Penunjang...</p>
+							<a href="http://data.bandung.go.id/beta/index.php/portal/detail_dataset/jumlah-tenaga-administrasi-kesehatan-di-fasilitas-kesehatan" class="btn btn-sm btn-primary">
+								<i class="fas fa-archive"></i> Lihat Dataset
+							</a>
+							<a href="http://data.bandung.go.id/beta/index.php/portal/detail_organisasi/dinas-kesehatan" class="btn btn-sm btn-primary">
+								<i class="fas fa-building"></i> Lihat Organisasi
+							</a>
+						</div>
+					</div>
+				</div>
+							</div>
+		</div>
+	</section>
+</div>
+<hr class="my-4">
+
+<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="text-center">
+					<h4 class="mt-3">Terima Kasih Atas Penilaiannya!</h4>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						<i class="fas fa-times"></i> Tutup
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="folderAddModal" tabindex="-1" role="dialog" aria-labelledby="folderAddModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="folderAddModalLabel">Berhasil !</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Data berhasil dimasukan ke Folder !
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-info" data-dismiss="modal">Pilih Data Lain</button>
+				<a href="http://data.bandung.go.id/beta/index.php/portal/folder" title="Lihat Folder" class="btn btn-primary">Lihat Folder</a>
+			</div>
+		</div>
+	</div>
+</div>		<footer class="container py-5">
+			<div class="row">
+				<div class="col-12 col-md">
+					<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="cc-by-sa" style="max-width: 50%">
+				</div>
+				<div class="col-6 col-md">
+					<h5>Aplikasi Open Data</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="http://data.bandung.go.id/arimbi">ARIMBI</a></li>
+						<li><a class="text-muted" href="http://data.bandung.go.id/dashboard">Bandung City Dashboard</a></li>
+						<li><a class="text-muted" href="http://data.bandung.go.id/apbd">Portal APBD Kota Bandung</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Atribusi</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://ckan.org/">CKAN</a></li>
+						<li><a class="text-muted" href="https://okfn.org/">Open Knowledge Foundation</a></li>
+						<li><a class="text-muted" href="https://flourish.studio//">Flourish Studio</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Mitra</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://ogi.bappenas.go.id/">Open Government Indonesia</a></li>
+						<li><a class="text-muted" href="https://data.go.id/">Satu Data Indonesia</a></li>
+						<li><a class="text-muted" href="https://jabarprov.go.id">Provinsi Jawa Barat</a></li>
+						<li><a class="text-muted" href="http://data.jabarprov.go.id">Satu Data Jawa Barat</a></li>
+						<li><a class="text-muted" href="https://bandung.go.id">Pemerintah Kota Bandung</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Tentang</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://opendatabdg.gitbook.io/dokumentasi/introduksi/visi-dan-misi">Visi - Misi</a></li>
+						<li><a class="text-muted" href="https://opendatabdg.gitbook.io/dokumentasi/introduksi/visi-dan-misi">Inisiatif</a></li>
+						<li><a class="text-muted" href="https://opendatabdg.gitbook.io/dokumentasi/kontak/kontak-dan-narahubung">Kontak</a></li>
+						<li><a class="text-muted" href="https://opendatabdg.gitbook.io/dokumentasi/kegiatan-dan-kemitraan/kemitraan-dan-kolaborasi">Kolaborasi</a></li>
+						<li><a class="text-muted" href="#">Penggunaan Data Pengunjung</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+             <!-- Optional JavaScript -->
+             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+             <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                 integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                 crossorigin="anonymous"></script>
+             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                 crossorigin="anonymous"></script>
+             <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"
+                 charset="utf-8"></script>
+             <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" type="text/javascript"
+                 charset="utf-8"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.3/papaparse.min.js"
+                 type="text/javascript" charset="utf-8"></script>
+             <!-- General JS Scripts -->
+             <!-- <script src="http://data.bandung.go.id/beta/assets/theme/stisla/modules/jquery.min.js"></script> -->
+             <script src="../../assets-beta/js/popper.js"></script>
+             <script src="../../assets-beta/js/tooltip.js"></script>
+             <!-- <script src="http://data.bandung.go.id/beta/assets/theme/stisla/modules/bootstrap/js/bootstrap.min.js"></script> -->
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"
+                 integrity="sha512-zMfrMAZYAlNClPKjN+JMuslK/B6sPM09BGvrWlW+cymmPmsUT1xJF3P4kxI3lOh9zypakSgWaTpY6vDJY/3Dig=="
+                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+                 integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+             <script src="../../assets-beta/js/stisla.js"></script>
+
+             <!-- JS Libraies -->
+
+             <!-- Page Specific JS File -->
+
+             <!-- Template JS File -->
+             <script src="../../assets-beta/js/scripts.js"></script>
+             <script src="../../assets-beta/js/custom.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/id.js" type="text/javascript"
+                 charset="utf-8"></script>
+             <script src="../../assets-beta/js/jquery.star-rating-svg.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+             <script src="../../assets-beta/js/portaldata.js"></script>
+	</body>
+</html>
